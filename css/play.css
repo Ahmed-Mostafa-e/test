@@ -1,0 +1,75 @@
+body{background:#fff;font-family: El+Messiri }
+.layer {position: fixed;background: none;top: 0}
+.layer div {position: absolute;background:rgba(255,255,255,.4);top: 0; width: 100%;height: 100%}
+.layer img {max-width: 50%;margin: auto;display: block;filter: blur(15px)}
+.main{ margin: 50px 0 }	
+.tex {display: flex;color: #444;flex-direction: row;margin: 0 16%;border: 1px solid #ddd}
+.tex div:nth-of-type(2){padding:0 20px; }
+.tex p{margin-top: 20px; margin-bottom: 5px;font-size: 30px;line-height:1.5rem ;
+	   text-transform: capitalize;letter-spacing: 2px}
+.tex p span{display: block;margin-top: 5px}
+.tex  .fa {direction: rtl;margin:0 3px ;transform: rotateY(180deg);color: #ffe866;font-size: 20px;padding-bottom: 30px}
+.tex span {font-size: 18px;margin-top: 20px ;color: deepskyblue}
+.tex strong{border: 1px solid deepskyblue; padding:0 5px;margin-left:20px}
+.tex strong:nth-of-type(3){margin: 0}
+.tex hr{ margin-top: 30px }
+.tex .info{display: block;color:#333;padding: 10px 0 ;margin: 0 }
+.rol{ color: #0b558e;padding: 10px 0; margin: 1% 16% }
+.rol span { margin: auto; display: block; width: 60px; height: 60px;border-radius: 50%;border: 1px solid #fff;cursor: pointer}
+.rol span .fa {margin: auto;display: block; width:70%;font-size: 60px;transition: .2s ease-in-out;}
+.rol .fa:hover{transform: translateY(7px);transition: .2s ease-in-out;}
+.tex img {width: 100%;height:100%;}
+
+.play {background:;margin:50px 4% }
+.quality {margin:0 auto;padding:0; text-align: center;margin: 20px 0; }
+.quality li{margin:0 10px;padding:  8px;font-size: 20px;display: inline-block;
+	        background: ;cursor: pointer;color: #333;border-radius: 50%;
+            border: 1px solid #888}
+.test video {height: 500px;width: 100%;object-fit: fill} 
+	
+.quality li:hover{color:#ffe899; background: #555;transition: .4s ease }
+
+.similar{ margin: 6%;position: relative;background: ;padding: 20px 0}
+ .title {background: ;margin: 6%; }
+ .title h1{color: #555; font-family: El Messiri ;}
+ .title h1:after, .similar .title h1:before{background: #777 }
+.perview{position: relative;margin: auto;height: 500px;width:50%}
+.per{position: absolute;width: 30%;height: 60%;right:0;bottom: 0;transform: translateX(250px)}
+.per img {width: 100%;height: 100%}
+
+
+.similar .i {display:none }
+#a1:checked ~ .perview #seven, #a2:checked ~ .perview #sex, #a3:checked ~ .perview #five, 
+#a4:checked ~ .perview #four, #a5:checked ~ .perview #three, #a6:checked ~ .perview #two,
+#a7:checked ~ .perview #one
+{transition:  .3s ease ; height: 100%;transform: translate(0);width: 100% }
+#a1:checked ~ .perview #sex, #a2:checked ~ .perview #five, #a3:checked ~ .perview #four, #a4:checked ~ .perview #three, #a5:checked ~ .perview #two, #a6:checked ~ .perview #one{z-index: 9}
+#a1:checked ~ #l2, #a2:checked ~ #l3, #a3:checked ~ #l4,
+#a4:checked ~ #l5, #a5:checked ~ #l6, #a6:checked ~ #l7, 
+#a7:checked ~ #l1 {z-index: 99}
+     
+
+
+ .right-navs{left: 15%;top: 45% }
+ .right-navs .fa{border: 1px solid silver;background: #0b558e;color: #fff }
+ .right-navs .fa:hover{}
+@media(min-width:768px) and (max-width:990px){
+		.main{margin: 50px 0}
+		.tex, .rol{margin: 0 4%}
+	.per{transform: translateX(200px);width: 40%;}
+
+}
+@media(max-width:767px){
+	.main{margin: 0;overflow: hidden}
+	.tex, .rol{margin: auto}
+	.tex div {padding-right:  4px;}
+	.tex span {display: block;margin-top:3px}
+	.tex p {line-height: 1.7rem}
+	.tex .fa{padding-bottom: 0}
+	.tex hr{ margin-top: 10px}
+	.tex .info{ padding: 10px 0; font-size: 16px}
+	.similar, .play{margin: 0 1%}
+	.perview{width: 100%}
+	.per{transform: translate(0);width: 25%;height: 35%}
+}
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
