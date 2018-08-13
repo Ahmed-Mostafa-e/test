@@ -169,7 +169,7 @@ text-align: center;background:#e6e6e6;padding: 50px 0}
 .right-navs{left: 2%}
 .left-navs{right: 2%}
 .left-navs .fa, .right-navs .fa {font-size: 65px;position:absolute; width:100% ;text-align: center; 
-	                              border: 1px solid #fff; border-radius: 50%}	
+	                              border: 1px solid #e6e6e6; border-radius: 50%}	
 
 .serious input{display: none}
 #a1:checked ~ .over-flow .serious-lay{transform: translateX(0);transition: 1s ease}
